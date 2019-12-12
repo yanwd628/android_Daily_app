@@ -3,6 +3,7 @@ package com.example.dailyapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
@@ -65,6 +66,13 @@ public class MainActivity extends AppCompatActivity {
                         ,calendar.get(Calendar.YEAR)
                         ,calendar.get(Calendar.MONTH)
                         ,calendar.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
+
+        tv_data.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,Main2Activity.class));
             }
         });
 
