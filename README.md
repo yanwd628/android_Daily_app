@@ -18,3 +18,4 @@ Github连接：https://github.com/xusigh/NCalendar
 
 使用SQLite数据库进行保存数据。
 
+TIPS：点击修改、长按删除。
